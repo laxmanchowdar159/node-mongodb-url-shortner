@@ -56,7 +56,7 @@ mongoose.connection.on('open', async () => {
 
 	// Just 2 URLs for testing purpose
 	await ShortURL.create({ full: 'http://google.com', short: '5xr' })
-	await ShortURL.create({ full: 'http://codedamn.com' })
+	await ShortURL.create({ full: 'https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/' })
 
 	app.listen(process.env.PUBLIC_PORT, () => {
 		console.log('Server started')
